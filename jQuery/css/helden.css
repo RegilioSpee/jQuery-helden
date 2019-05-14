@@ -1,0 +1,59 @@
+.portret img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+body {
+  font-family: Bellerose;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 97.8vw;
+  max-width: 97.8vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+/* footer {
+  text-align: center;
+  background: dodgerblue;
+  padding: 0.5em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 5%;
+} */
+footer {
+  background-color: dodgerblue;
+  text-align: center;
+  padding: 0.5em;
+  position: relative;
+  cursor: pointer;
+  height: 70%;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
